@@ -1,3 +1,10 @@
+<p>
+    {% if page.lang == "es" %}
+    es | <a href="{{ site.t['en'][page.ref].url }}">en</a>
+    {% else %}
+    <a href="{{ site.t['es'][page.ref].url }}">es</a> | en
+    {% endif %}
+</p>
 <ul>
     {% for menu in site.t[page.lang] %}
         <li><a href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>

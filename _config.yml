@@ -1,5 +1,8 @@
 t:
     en:
+        index:
+            name: "Index"
+            url: "/index/en"
         blog:
             name: "Blog"
             url: "/blog_en/"
@@ -13,6 +16,9 @@ t:
             name: "Hire Me"
             url: "/hire/"
     es:
+        index:
+            name: "Index"
+            url: "/"
         blog:
             name: "Blog"
             url: "/blog/"
