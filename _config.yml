@@ -1,0 +1,27 @@
+t:
+    en:
+        blog:
+            name: "Blog"
+            url: "/blog_en/"
+        projects:
+            name: "Projects"
+            url: "/projects/"
+        about:
+            name: "About Me"
+            url: "/about/"
+        hire:
+            name: "Hire Me"
+            url: "/hire/"
+    es:
+        blog:
+            name: "Blog"
+            url: "/blog/"
+        projects:
+            name: "Proyectos"
+            url: "/proyectos/"
+        about:
+            name: "Sobre Mí"
+            url: "/acerca/"
+        hire:
+            name: "Contrátame"
+            url: "/contratar/"
