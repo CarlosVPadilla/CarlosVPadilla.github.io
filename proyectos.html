@@ -6,45 +6,60 @@ permalink: /proyectos/
 ---
 <h1>Proyectos</h1>
 
-<h2><a href="http://www.codesin.cl/Jupiter/web/colegios">SieteNet de Codesin</a></h2>
+<h2><a href="http://www.codesin.cl/Jupiter/web/colegios">SieteNet</a></h2>
 {% include imagelink.html file="/images/static/asistenciacodesin.png" max-width="200px" alt="Módulo de asistencia" %}
 {% include imagelink.html file="/images/static/notascodesin.png" max-width="200px" alt="Módulo de notas" %}
-<p>
-    Desde el año 2012 reestructuré el sistema de colegios de Codesin, el cual recientemente adquirió el nombre de SieteNet.
-</p>
-<p>
-    Hecho con Symfony 2.3, es una robusta plataforma de gestión para establecimientos educacionales de todo tipo. Permite el ingreso
-    y emisión de notas, asistencia, anotaciones, observaciones, atrasos, y también funciona como un medio de comunicación en vivo
-    para los apoderados.
-</p>
-<p>
-    ¿Lo más importante de todo? Entrega tranquilidad a apoderados y permite mejorar la gestión a los establecimientos.
-</p>
+<ul>
+    {% include projectData.html forWhom="Codesin." when="Desde el 2012 a la fecha."
+        techs="PHP, Symfony 2.3, Doctrine, Twig, jQuery, SQL Server." %}
+    <li>
+        Reestructuré el sistema de colegios de Codesin, el cual recientemente adquirió el nombre de SieteNet. Es una robusta plataforma 
+        de gestión para establecimientos educacionales de todo tipo. Permite el ingreso y emisión de notas, asistencia, anotaciones, observaciones, 
+        atrasos, y también funciona como un medio de comunicación en vivo para los apoderados. ¿Lo más importante de todo? Entrega tranquilidad a 
+        apoderados y permite mejorar la gestión a los establecimientos.
+    </li>
+</ul>
 
-<h2><a href="http://www.metricarts.com/">TunnelArts de MetricArts</a></h2>
-<p>
-    Durante el año 2017 trabajé para MetricArts (y realmente deberían consultar a ellos para todas sus necesidades de análisis de datos,
-    son lo máximo). Mi trabajo fue en el desarrollo de una aplicación multiplataforma (Android y web a través de .NET) llamada TunnelArts,
-    una excelente herramienta para el registro de avances de excavaciones urbanas y predicciones sobre estos avances.
-</p>
+<h2><a href="http://www.metricarts.com/">TunnelArts</a></h2>
+<ul>
+    {% include projectData.html forWhom="MetricArts." when="2017."
+        techs="Java, Android, C#, .NET." %}
+    <li>
+        Durante el año 2017 trabajé para MetricArts (y realmente deberían consultar a ellos para todas sus necesidades de análisis de datos,
+        son lo máximo). Mi trabajo fue en el desarrollo de una aplicación multiplataforma, TunnelArts, una excelente herramienta para el registro 
+        de avances de excavaciones urbanas y predicciones sobre estos avances.
+    </li>
+</ul>
 
 <h2><a href="http://www.youngschool.cl/">Página Web del Iquique Young School</a></h2>
 {% include imagelink.html file="/images/static/iys_drupal.png" max-width="200px" alt="Página del Iquique Young School" %}
-<p>
-    A cargo personal, el colegio Iquique Young School de la mencionada ciudad de Iquique, Chile, me encargó una página web para ellos.
-    Está hecha en Drupal 7 y completamente configurada para su uso personal, además de ser responsive.
-</p>
+<ul>
+    {% include projectData.html forWhom="Iquique Young School." when="2016."
+        techs="PHP, Drupal, MySQL, SASS." %}
+    <li>
+        A cargo personal, el colegio Iquique Young School de la mencionada ciudad de Iquique, Chile, me encargó una página web para ellos.
+        Está hecha en Drupal 7 y completamente configurada para uso personalizado del colegio, incluyendo galerías de fotos y blogs para
+        profesores.
+    </li>
+</ul>
 
 <h2>Trabajo de Tesis - Sistema de Despacho Multiagente</h2>
 {% include imagelink.html file="/images/static/mas.png" max-width="200px" alt="PlaSMA - Simulador para Sistemas Multiagente" %}
-<p>
-    Mi trabajo de tesis es con respecto a inteligencia artificial. Más específicamente, agentes inteligentes. La idea es simular una mina
-    a cielo abierto, y los camiones y palas que interactúan, junto con todos los procesos de negociación relacionados. Las herramientas
-    usadas son Java, el framework JADE para el manejo de los agentes, y PlaSMA para la simulación de la mina.
-</p>
+<ul>
+    {% include projectData.html forWhom="Personal; trabajo de título." when="2016 hasta el presente."
+        techs="Java, framework JADE para agentes, simulador PlaSMA." %}
+    <li>
+        Mi trabajo de tesis es con respecto a inteligencia artificial. Más específicamente, agentes inteligentes. La idea es simular una mina
+        a cielo abierto, y los camiones y palas que interactúan, junto con todos los procesos de negociación relacionados.
+    </li>
+</ul>
 
 <h2><a href="https://github.com/CarlosVPadilla/CarlosVPadilla.github.io">Este sitio</a></h2>
-<p>
-    Sí, este sitio web es parte de mis proyectos. Hecho en Jekyll, puede revisar el código fuente en el link del título. Si quiere un ejemplo concreto de mis
-    capacidades de programación, este ejemplo responderá todas sus dudas.
-</p>
+<ul>
+    {% include projectData.html forWhom="Personal." when="2017."
+        techs="Jekyll, SASS." %}
+    <li>
+        Sí, este sitio web es parte de mis proyectos. Puedes revisar el código fuente en el link del título. Si quieres un ejemplo concreto de mis
+    capacidades de programación, este ejemplo responderá todas tus dudas.
+    </li>
+</ul>

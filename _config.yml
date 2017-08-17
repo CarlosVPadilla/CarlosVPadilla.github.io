@@ -31,3 +31,13 @@ t:
         hire:
             name: "Contrátame"
             url: "/contratar/"
+strings:
+    forWhom:
+        en: "For whom?:"
+        es: "¿Para quién?:"
+    when:
+        en: "When?:"
+        es: "¿Cuándo?:"
+    techs:
+        en: "Used technologies:"
+        es: "Tecnologías usadas:"

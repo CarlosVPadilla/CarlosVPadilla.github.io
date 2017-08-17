@@ -1,0 +1,12 @@
+{% assign forWhom = site.strings.forWhom[page.lang] %}
+{% assign forWhomValue = include.forWhom %}
+
+{% assign when = site.strings.when[page.lang] %}
+{% assign whenValue = include.when %}
+
+{% assign techs = site.strings.techs[page.lang] %}
+{% assign techsValue = include.techs %}
+
+{% include projectSubtitle.html title=forWhom text=forWhomValue %}
+{% include projectSubtitle.html title=when text=whenValue %}
+{% include projectSubtitle.html title=techs text=techsValue %}
