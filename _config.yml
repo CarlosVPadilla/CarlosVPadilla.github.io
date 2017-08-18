@@ -12,9 +12,6 @@ t:
         about:
             name: "About Me"
             url: "/about/"
-        hire:
-            name: "Hire Me"
-            url: "/hire/"
     es:
         index:
             name: "Index"
@@ -28,9 +25,6 @@ t:
         about:
             name: "Sobre Mí"
             url: "/acerca/"
-        hire:
-            name: "Contrátame"
-            url: "/contratar/"
 strings:
     forWhom:
         en: "For whom?:"
@@ -41,3 +35,6 @@ strings:
     techs:
         en: "Used technologies:"
         es: "Tecnologías usadas:"
+    hello:
+        en: "Hello, Carlos"
+        es: "Hola, Carlos"

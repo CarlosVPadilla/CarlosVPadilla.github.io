@@ -1,0 +1,15 @@
+{% if page.lang == "es" %}
+<h2>¡Contáctame!</h2>
+<p>
+    Primero, lee <a href="{{ site.t[page.lang].about.url }}">por qué puedo ayudarte</a>. Luego, envíame un correo a 
+    <a href="mailto:carlos.vpadilla@gmail.com?subject={{ site.strings.hello[page.lang] }}">carlos.vpadilla@gmail.com</a> y podemos discutir proyectos y cualquier
+    otra forma en la que pueda ayudarte.
+</p>
+{% else %}
+<h2>Contact me!</h2>
+<p>
+    First, read <a href="{{ site.t[page.lang].about.url }}">why I can help you</a>. Then, send a mail to 
+    <a href="mailto:carlos.vpadilla@gmail.com?subject={{ site.strings.hello[page.lang] }}">carlos.vpadilla@gmail.com</a> and we can start
+    discussing any projects or ways I can help you.
+</p>
+{% endif %}

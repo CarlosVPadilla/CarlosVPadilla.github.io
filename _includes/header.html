@@ -10,3 +10,17 @@
         <li><a href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
     {% endfor %}
 </ul>
+
+<div class="jumbotron">
+    <div class="container">
+    {%if page.lang == "es" %}
+        <h1>Hola, soy Carlos Vergara.</h1>
+        <h2>Desarrollador Web</h2>
+        <p>Y hago sistemas web, principalmente usando Symfony. O sea, PHP.</p>
+    {% else %}
+        <h1>Hello, I'm Carlos Vergara.</h1>
+        <h2>Web Developer</h2>
+        <p>And I make web systems, using mainly Symfony. That is to say, PHP.</p>
+    {% endif %}
+    </div>
+</div>
