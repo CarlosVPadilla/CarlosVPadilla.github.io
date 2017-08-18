@@ -3,9 +3,9 @@ t:
         index:
             name: "Index"
             url: "/index/en"
-        blog:
-            name: "Blog"
-            url: "/blog_en/"
+        #blog:
+        #    name: "Blog"
+        #    url: "/blog_en/"
         projects:
             name: "Projects"
             url: "/projects/"
@@ -16,9 +16,9 @@ t:
         index:
             name: "Index"
             url: "/"
-        blog:
-            name: "Blog"
-            url: "/blog/"
+        #blog:
+        #    name: "Blog"
+        #    url: "/blog/"
         projects:
             name: "Proyectos"
             url: "/proyectos/"

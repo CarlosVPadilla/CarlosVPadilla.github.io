@@ -6,20 +6,28 @@ permalink: /index/en
 ---
 <h2>What I can do for you</h2>
 
-<h3>Web Development</h3>
-<p>
-    I have developed web systems with Symfony for years. Symfony is a robust web development framework, special for commercial grade
-    and high complexity systems. I can also deal with any other types of frameworks, just ask me.
-</p>
+<div class="row">
+    <div class="col-sm-4">
+        {% capture webdevtext %}
+            I have developed web systems with Symfony for years. Symfony is a robust web development framework, special for commercial grade
+            and high complexity systems. I can also deal with any other types of frameworks, just ask me.
+        {% endcapture %}
+        {% include servicecard.html title="Web Development" text=webdevtext %}
+    </div>
 
-<h3>Websites</h3>
-<p>
-    Drupal is probably the most versatile CMS there is, and for this reason it is also the most difficult one to learn. I can implement
-    a system with Drupal and even design your website, no templates used. I can also use other CMS.
-</p>
+    <div class="col-sm-4">
+        {% capture webpagetext %}
+            Drupal is probably the most versatile CMS there is, and for this reason it is also the most complex out there. I can implement
+            your website with Drupal, completely original, no templates used. I can also use other CMS if you wish so.
+        {% endcapture %}
+        {% include servicecard.html title="Websites" text=webpagetext %}
+    </div>
 
-<h3>Other Types of Development</h3>
-<p>
-    I am a versatile developer and I will always make sure the objectives of your company are accomplished. If you need any other type
-    of development, I can deal with any challenge.
-</p>
+    <div class="col-sm-4">
+        {% capture otherdevtext %}
+            I am a versatile developer and I will always make sure the objectives of your company are accomplished. If you need any other type
+            of development, I can deal with any challenge.
+        {% endcapture %}
+        {% include servicecard.html title="Other Types of Development" text=otherdevtext %}
+    </div>
+</div>

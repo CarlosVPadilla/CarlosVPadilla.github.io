@@ -1,16 +1,32 @@
-<p>
-    {% if page.lang == "es" %}
-    es | <a href="{{ site.t['en'][page.ref].url }}">en</a>
-    {% else %}
-    <a href="{{ site.t['es'][page.ref].url }}">es</a> | en
-    {% endif %}
-</p>
-<ul>
-    {% for menu in site.t[page.lang] %}
-        <li><a href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
-    {% endfor %}
-</ul>
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                {% for menu in site.t[page.lang] %}
+                    {% if page.url == menu[1].url %}
+                        {% assign liClass = "nav-item active" %}
+                    {% else %}
+                        {% assign liClass = "nav-item" %}
+                    {% endif %}
+                    <li class="{{ liClass }}">
+                        <a class="nav-link" href="{{ menu[1].url }}">
+                            {{ menu[1].name }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            
+            <p>
+                {% if page.lang == "es" %}
+                es | <a href="{{ site.t['en'][page.ref].url }}">en</a>
+                {% else %}
+                <a href="{{ site.t['es'][page.ref].url }}">es</a> | en
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</nav>
+    
 <div class="jumbotron">
     <div class="container">
     {%if page.lang == "es" %}

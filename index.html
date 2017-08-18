@@ -5,20 +5,29 @@ ref: index
 ---
 <h2>Lo que puedo hacer por ti</h2>
 
-<h3>Desarrollo Web</h3>
-<p>
-    He desarrollado sistemas web con Symfony por años. Symfony es un robusto framework para desarrollo de sistemas web, especial para
-    sistemas comerciales y de alta complejidad. También puedo con otros tipos de frameworks, solo consúltame.
-</p>
+<div class="row">
+    <div class="col-sm-4">
+        {% capture webdevtext %}
+            He desarrollado sistemas web con Symfony por años. Symfony es un robusto framework 
+            para desarrollo de sistemas web, especial para sistemas comerciales y de alta complejidad. 
+            También puedo con otros tipos de frameworks, solo consúltame.
+        {% endcapture %}
+        {% include servicecard.html title="Desarrollo Web" text=webdevtext %}
+    </div>
 
-<h3>Páginas Web</h3>
-<p>
-    Drupal es quizás el CMS más versátil que hay, y por esta razón es también el más difícil de aprender. Puedo implementar un sistema
-    con Drupal e incluso diseñar tu página sin plantillas. También puedo con otros CMS.
-</p>
+    <div class="col-sm-4">
+        {% capture webpagetext %}
+            Drupal es quizás el CMS más versátil que hay, y por esta razón es también el más complejo. Puedo implementar tu página
+            con Drupal, sin plantillas, completamente original. También puedo con otros CMS si así lo deseas.
+        {% endcapture %}
+        {% include servicecard.html title="Páginas Web" text=webpagetext %}
+    </div>
 
-<h3>Otros Tipos de Desarrollo</h3>
-<p>
-    Soy un desarrollador versátil y siempre velaré porque los objetivos de tu empresa se cumplan. Si necesitas otro tipo de desarrollo,
-    puedo con cualquier desafío.
-</p>
+    <div class="col-sm-4">
+        {% capture otherdevtext %}
+            Soy un desarrollador versátil y siempre velaré porque los objetivos de tu empresa se cumplan. Si necesitas otro tipo de desarrollo,
+            puedo con cualquier desafío.
+        {% endcapture %}
+        {% include servicecard.html title="Otros Tipos de Desarrollo" text=otherdevtext %}
+    </div>
+</div>
