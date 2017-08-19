@@ -1,0 +1,27 @@
+#pageFooter {
+    padding: 2em 0em;
+    background-color: $color-primary-1;
+    color: $color-primary-2;
+    
+    #contactinfo {
+        color: $color-primary-2;
+        
+        .nav-link {
+            padding: .5rem 2rem;
+            color: $color-primary-3;
+        }
+        
+        .fa-li {
+            left: 0;
+        }
+    }
+    
+    #creativecommons {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: $color-primary-2;
+        a {
+            color: $color-primary-4;
+        }
+    }
+}

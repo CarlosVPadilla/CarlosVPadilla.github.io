@@ -1,0 +1,55 @@
+#welcome {
+    background-color: $color-primary-0;
+    
+    h1, h2 {
+        color: $color-primary-1;
+    }
+    
+    p {
+        color: $color-primary-4;
+    }
+}
+
+#mainnav {
+    background-color: $color-primary-1;
+    
+    .nav-item a {
+        color: $color-primary-2;
+    }
+    
+    .nav-item:hover a {
+        color: $color-primary-3;
+    }
+    
+    .active a {
+        color: $color-primary-4;
+    }
+    
+    .lang {
+        color: $color-primary-4;
+        
+        a {
+            color: $color-primary-2;
+        }        
+    }
+}
+
+#content {
+    h2 {
+        color: $color-primary-0;
+    }
+    
+    .row {
+        h4 {
+            color: $color-primary-3;
+        }
+        
+        p {
+            color: $color-primary-1;
+        }
+    }
+}
+
+#contactme {
+    
+}

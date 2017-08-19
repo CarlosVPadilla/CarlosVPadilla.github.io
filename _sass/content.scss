@@ -1,0 +1,40 @@
+#content {
+    h1, h2 {
+        color: $color-primary-0;
+    }
+    
+    h2 a {
+        color: $color-primary-3;
+    }
+    
+    p {
+        color: $color-primary-1;
+        a {
+            color: $color-primary-3;
+        }
+    }
+    
+    img {
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+    
+    ul {
+        li {
+            color: $color-primary-1;
+            strong {
+                color: $color-primary-3;
+            }
+        }
+    }
+    
+    .row {
+        h4 {
+            color: $color-primary-3;
+        }
+        
+        p {
+            color: $color-primary-1;
+        }
+    }
+}

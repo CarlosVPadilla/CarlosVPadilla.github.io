@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id="mainnav" class="navbar navbar-expand-lg">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
                 {% endfor %}
             </ul>
             
-            <p>
+            <p class="lang">
                 {% if page.lang == "es" %}
                 es | <a href="{{ site.t['en'][page.ref].url }}">en</a>
                 {% else %}
@@ -30,7 +30,7 @@
     </div>
 </nav>
     
-<div class="jumbotron">
+<div id="welcome" class="jumbotron">
     <div class="container">
     {%if page.lang == "es" %}
         <h1>Hola, soy Carlos Vergara.</h1>
