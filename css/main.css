@@ -42,6 +42,9 @@
   color: #142650; }
 #content .row p {
   color: #6E7EA2; }
+#content .btn.btn-raised.btn-primary {
+  background-color: #A17D34;
+  border-color: #A17D34; }
 
 #contactme {
   margin-top: 1em; }
