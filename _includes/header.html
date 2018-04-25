@@ -5,15 +5,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                {% for menu in site.t[page.lang] %}
-                    {% if page.url == menu[1].url %}
+                {% assign sorted_pages = site.html_pages | sort: "order" %}
+                {% for menu in sorted_pages %}
+                    {% if page.url == menu.url %}
                         {% assign liClass = "nav-item active" %}
                     {% else %}
                         {% assign liClass = "nav-item" %}
                     {% endif %}
                     <li class="{{ liClass }}">
-                        <a class="nav-link" href="{{ menu[1].url }}">
-                            {{ menu[1].name }}
+                        <a class="nav-link" href="{{ menu.url }}">
+                            {{ menu.title }}
                         </a>
                     </li>
                 {% endfor %}
@@ -21,9 +22,9 @@
             
             <p class="lang">
                 {% if page.lang == "es" %}
-                es | <a href="{{ site.t['en'][page.ref].url }}">en</a>
+                es | <a href=" {{ page.url | prepend: '/en' }}">en</a>
                 {% else %}
-                <a href="{{ site.t['es'][page.ref].url }}">es</a> | en
+                <a href=" {{ page.url | remove: '/en' }}">es</a> | en
                 {% endif %}
             </p>
         </div>
