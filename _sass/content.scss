@@ -37,4 +37,10 @@
             color: $color-primary-1;
         }
     }
+    
+        
+    .btn.btn-raised.btn-primary {
+        background-color: $color-complement-0;
+        border-color: $color-complement-0;
+    }
 }

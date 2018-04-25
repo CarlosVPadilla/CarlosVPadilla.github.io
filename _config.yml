@@ -1,11 +1,17 @@
+plugins:
+  - jekyll-polyglot
+languages: ["en", "es"]
+default_lang: "es"
+exclude_from_localization: ["javascript", "images", "css"]
+parallel_localization: false
 t:
     en:
         index:
             name: "Index"
-            url: "/index/en"
+            url: "/"
         #blog:
         #    name: "Blog"
-        #    url: "/blog_en/"
+        #    url: "/blog/"
         projects:
             name: "Projects"
             url: "/projects/"
@@ -21,10 +27,10 @@ t:
         #    url: "/blog/"
         projects:
             name: "Proyectos"
-            url: "/proyectos/"
+            url: "/projects/"
         about:
             name: "Sobre Mí"
-            url: "/acerca/"
+            url: "/about/"
 strings:
     forWhom:
         en: "For whom?:"

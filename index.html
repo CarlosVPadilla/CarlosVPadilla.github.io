@@ -2,11 +2,14 @@
 layout: default
 lang: es
 ref: index
+permalink: /
+title: Índice
+order: 1
 ---
 <h2 class="text-center">Lo que puedo hacer por ti</h2>
 
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 align-self-stretch">
         {% capture webdevtext %}
             He desarrollado sistemas web con Symfony, WebAPIs con C#, y conozco el patrón MVC
             en profundidad. Puedo desarrollar sistemas de nivel comercial e industrial con alta
@@ -15,7 +18,7 @@ ref: index
         {% include servicecard.html title="Desarrollo Web" text=webdevtext %}
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-4 align-self-stretch">
         {% capture webpagetext %}
             Drupal es quizás el CMS más versátil que hay, y por esta razón es también el más complejo. Puedo implementar tu página
             con Drupal, sin plantillas, completamente original. También puedo con otros CMS si así lo deseas.
@@ -23,7 +26,7 @@ ref: index
         {% include servicecard.html title="Páginas Web" text=webpagetext %}
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-4 align-self-stretch">
         {% capture otherdevtext %}
             He desarrollado en Android, simulaciones en Java e incluso análisis con Python. Esto
             demuestra mi versatilidad y siempre velaré porque los objetivos de tu empresa se cumplan. 
@@ -33,6 +36,6 @@ ref: index
     </div>
 </div>
 
-<div class="text-center">
-    <a class="btn btn-primary" href="{{ site.t['es']['projects'].url }}">Ver Mis Proyectos &gt;</a>
+<div class="text-center mt-4">
+    <a class="btn btn-raised btn-primary" href="{{ site.t['es']['projects'].url }}">Ver Mis Proyectos &gt;</a>
 </div>

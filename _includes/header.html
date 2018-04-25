@@ -1,29 +1,31 @@
 <nav id="mainnav" class="navbar navbar-expand-lg">
-    <div class="container">
+    <div class="container d-block">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                {% for menu in site.t[page.lang] %}
-                    {% if page.url == menu[1].url %}
+            <ul class="navbar-nav mr-auto mx-auto">
+                {% assign sorted_pages = site.html_pages | sort: "order" %}
+                {% for menu in sorted_pages %}
+                    {% if page.url == menu.url %}
                         {% assign liClass = "nav-item active" %}
                     {% else %}
                         {% assign liClass = "nav-item" %}
                     {% endif %}
                     <li class="{{ liClass }}">
-                        <a class="nav-link" href="{{ menu[1].url }}">
-                            {{ menu[1].name }}
+                        <a class="nav-link" href="{{ menu.url }}">
+                            {{ menu.title }}
                         </a>
                     </li>
                 {% endfor %}
             </ul>
-            
-            <p class="lang">
+        </div>
+        <div class="container mx-auto">
+            <p class="lang text-center">
                 {% if page.lang == "es" %}
-                es | <a href="{{ site.t['en'][page.ref].url }}">en</a>
+                Español | <a href=" {{ page.url | prepend: '/en' }}">English</a>
                 {% else %}
-                <a href="{{ site.t['es'][page.ref].url }}">es</a> | en
+                <a href=" {{ page.url | remove: '/en' }}">Español</a> | English
                 {% endif %}
             </p>
         </div>
