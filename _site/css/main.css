@@ -1,0 +1,69 @@
+#welcome {
+  background-color: #2A3E6C;
+  border-radius: 0; }
+  #welcome h1, #welcome h2 {
+    color: #F2D59B; }
+  #welcome p {
+    color: #6E7EA2; }
+
+#mainnav {
+  background-color: #6E7EA2; }
+  #mainnav .navbar-toggler {
+    border-color: #465985; }
+    #mainnav .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+  #mainnav .nav-item a {
+    color: #465985; }
+  #mainnav .nav-item:hover a {
+    color: #142650; }
+  #mainnav .active a {
+    color: #051434; }
+  #mainnav .lang {
+    color: #051434; }
+    #mainnav .lang a {
+      color: #465985; }
+
+#content h1, #content h2 {
+  color: #2A3E6C; }
+#content h2 a {
+  color: #142650; }
+#content p {
+  color: #6E7EA2; }
+  #content p a {
+    color: #142650; }
+#content img {
+  margin-right: 1em;
+  margin-bottom: 1em; }
+#content ul li {
+  color: #6E7EA2; }
+  #content ul li strong {
+    color: #142650; }
+#content .row h4 {
+  color: #142650; }
+#content .row p {
+  color: #6E7EA2; }
+
+#contactme {
+  margin-top: 1em; }
+  #contactme h2 {
+    color: #A17D34; }
+  #contactme p {
+    color: #C6A35D; }
+    #contactme p a {
+      color: #785614; }
+
+#pageFooter {
+  padding: 2em 0em;
+  background-color: #6E7EA2;
+  color: #465985; }
+  #pageFooter #contactinfo .nav-link {
+    padding: .5rem 2rem;
+    color: #142650; }
+    #pageFooter #contactinfo .nav-link i {
+      color: #465985; }
+  #pageFooter #creativecommons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #465985; }
+    #pageFooter #creativecommons a {
+      color: #051434; }
