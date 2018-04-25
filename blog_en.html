@@ -1,0 +1,31 @@
+---
+layout: bloglayout
+lang: en
+ref: blog
+permalink: /blog/
+title: Blog
+order: 4
+---
+<h2>Latest Posts</h2>
+<div class="row">
+    {% assign filtered_posts = site.posts | where: "lang","en" %}
+    {% for post in filtered_posts %}
+        <div class="col-sm">
+            <div class="content blog-preview card">
+                <h3 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p class="card-subtitle text-muted">Posted: {{ post.date | date: "%m/%d/%Y" }}</p>
+                <p class="card-text">{{ post.excerpt }}</p>
+            </div>
+        </div>
+        {% if forloop.last == true %}
+</div>
+        {% else %}
+            {% if forloop.index0 > 0 %}
+                {% assign mod = forloop.index | modulo:3 %}
+                {% if mod == 0 %}
+</div>
+<div class="row">
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
